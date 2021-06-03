@@ -55,4 +55,36 @@ class AllItem{
         ),
       )
   );
+  final BottomNav=Container(
+    height: 50,
+    child: BottomAppBar(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          IconButton(onPressed: (){},
+              icon: Icon(Icons.home
+              )
+          ),
+          IconButton(
+              onPressed: (){},
+              icon: Icon(Icons.search
+              )
+          ),
+          IconButton(
+              onPressed: (){},
+              icon: Icon(Icons.add_box_outlined
+              )
+          ),
+          IconButton(
+              onPressed: (){},
+              icon: Icon(Icons.favorite)
+          ),
+          IconButton(
+              onPressed: (){},
+              icon: Icon(Icons.account_circle_rounded)
+          ),
+        ],
+      ),
+    ),
+  );
 }

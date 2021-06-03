@@ -11,7 +11,7 @@ class InstaList extends StatelessWidget {
   Widget build(BuildContext context) {
     var deviceSize=MediaQuery.of(context).size;
     return ListView.builder(
-      itemCount: 5,
+      itemCount: 15,
         itemBuilder: (context,index)=>index==0
             ?SizedBox(
           height: deviceSize.height* 0.14,
@@ -93,7 +93,7 @@ class InstaList extends StatelessWidget {
                             shape: BoxShape.circle,
                             image: DecorationImage(
                                 fit: BoxFit.fill,
-                                image: NetworkImage("https://avatars.githubusercontent.com/u/46190988?v=4")
+                                image: NetworkImage("https://avatars.githubusercontent.com/u/46190988?v=4",)
                             )
                         ),
                       ),
@@ -109,6 +109,10 @@ class InstaList extends StatelessWidget {
                     ],
                   ),
                 ),
+                Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 16),
+                  child: Text("5 Days Ago",style: TextStyle(color: Colors.grey),),
+                )
           ],
         ),
     );
