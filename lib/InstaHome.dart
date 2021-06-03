@@ -9,8 +9,8 @@ class instaHome extends StatelessWidget {
     backgroundColor: Colors.white,
     leading: Icon(Icons.camera_alt,),
     title: SizedBox(
-      height:35,
-        child: Image.asset("assets/logo/instaLogo.png",)
+      height:40,
+        child: Image.asset("assets/logo/logo.png",)
     ),
     actions: [
       Padding(
