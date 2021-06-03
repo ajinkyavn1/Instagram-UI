@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instaui/Insta_Body.dart';
 import 'package:velocity_x/velocity_x.dart';
 // import 'package:v';
 
@@ -23,6 +24,39 @@ class instaHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: topbar,
+      bottomNavigationBar: Container(
+        height: 50,
+        child: BottomAppBar(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              IconButton(onPressed: (){},
+                  icon: Icon(Icons.home
+                  )
+              ),
+              IconButton(
+                  onPressed: (){},
+                  icon: Icon(Icons.search
+                  )
+              ),
+              IconButton(
+                  onPressed: (){},
+                  icon: Icon(Icons.add_box_outlined
+                  )
+              ),
+              IconButton(
+                  onPressed: (){},
+                  icon: Icon(Icons.favorite)
+              ),
+              IconButton(
+                  onPressed: (){},
+                  icon: Icon(Icons.account_circle_rounded)
+              ),
+            ],
+          ),
+        ),
+      ),
+      body: InstaBody(),
     );
   }
 }
