@@ -12,7 +12,8 @@ class InstaStories extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         mainAxisSize: MainAxisSize.min,
         children: [
-          AllItem().toptext
+          AllItem().toptext,
+          AllItem().Stories
         ],
       ),
     );
