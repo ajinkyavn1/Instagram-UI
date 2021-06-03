@@ -74,7 +74,41 @@ class InstaList extends StatelessWidget {
                 ],
               ),
             ),
-           "Liked By Priya,sheha and 568231 Others".text.make()
+           Padding(
+             padding: EdgeInsets.symmetric(horizontal: 16),
+             child: Text("Liked By Priya,sheha and 568231 Others",
+               style: TextStyle(
+                 fontWeight: FontWeight.bold
+               ),
+             ),
+           ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(16, 16,8,16),
+                  child: Row(
+                    children: [
+                      Container(
+                        height: 40,
+                        width: 40,
+                        decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            image: DecorationImage(
+                                fit: BoxFit.fill,
+                                image: NetworkImage("https://avatars.githubusercontent.com/u/46190988?v=4")
+                            )
+                        ),
+                      ),
+                      10.widthBox,
+                     Expanded(
+                         child:TextField(
+                           decoration: InputDecoration(
+                             border: InputBorder.none,
+                             hintText: "Add Commnet"
+                           ),
+                         )
+                     )
+                    ],
+                  ),
+                ),
           ],
         ),
     );
