@@ -35,7 +35,7 @@ class AllItem{
                     shape: BoxShape.circle,
                     image: DecorationImage(
                       fit: BoxFit.fill,
-                      image: NetworkImage("https://avatars.githubusercontent.com/u/46190988?v=4")
+                      image: NetworkImage("https://previews.123rf.com/images/pornpatmalajak/pornpatmalajak1601/pornpatmalajak160100059/51331132-quote-about-love-and-coffee-on-coffee-background-design-with-vintage-style-valentine-s-day-.jpg")
                     )
                   ),
                   margin: EdgeInsets.symmetric(horizontal: 8),
